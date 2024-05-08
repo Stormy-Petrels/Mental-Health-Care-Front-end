@@ -1,0 +1,19 @@
+<div className="bg-[#E61F57]">Nội dung phần tử</div>
+Tương tự, bạn cũng có thể áp dụng màu "#E61F57" cho màu chữ (text color) bằng cách sử dụng lớp "text-[#E61F57]":
+
+jsx
+Copy
+<div className="text-[#E61F57]">Nội dung phần tử</div>
+Ngoài ra, bạn còn có thể sử dụng màu "#E61F57" cho các thuộc tính khác như border color, hover color, và nhiều thuộc tính khác trong Tailwind CSS. Bạn có thể tìm hiểu thêm về các lớp màu sắc có sẵn trong Tailwind CSS tại tài liệu chính thức của nó.
+
+border-gray-200 tôi muốn đổi màu border thành màu đó
+
+Bot image for Assistant
+Assistant
+
+Poe
+Để đổi màu border thành màu "#E61F57" trong Tailwind CSS, bạn có thể sử dụng lớp CSS "border-[#E61F57]". Dưới đây là một ví dụ:
+
+jsx
+Copy
+<div className="border-[#E61F57]">Nội dung phần tử</div>
