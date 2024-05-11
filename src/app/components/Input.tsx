@@ -10,10 +10,13 @@ export default function Input({ label, type, placeholder }) {
       <div className="relative">
         <input
           type={type}
-          className="w-full rounded-lg border border-[#E61F57] p-4 pe-12 text-sm shadow-sm"
+          className="w-full rounded-lg border-none p-4 pe-12 text-sm shadow-sm"
           placeholder={placeholder}
         />
       </div>
     </div>
   );
 }
+
+
+

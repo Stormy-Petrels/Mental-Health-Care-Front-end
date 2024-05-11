@@ -2,6 +2,7 @@ import React from "react";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
 import Image from "../../components/Image";
+import { useRouter } from "next/navigation";
 export default function Hero() {
   return (
     <>
