@@ -1,6 +1,6 @@
 import React from "react";
-import Logo from "../../../components/Logo";
-import Button from "../../../components/Button";
+import Logo from "../../components/Logo";
+import Button from "../../components/Button";
 export default function Header() {
   return (
     <div>

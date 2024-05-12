@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Input from "../components/Input";
-import Signup from "./patient/Signup";
+import Input from "./components/Button";
+import Signup from "./patient/signup/page.jsx";
 import Header from "./layouts/patient/Header";
 import Footer from "./layouts/patient/Footer";
 export default function Home() {
