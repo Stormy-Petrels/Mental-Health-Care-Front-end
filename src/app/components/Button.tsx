@@ -1,6 +1,12 @@
 import React from "react";
 
-export default function Button({ text, className, onClick }) {
+interface ButtonProps {
+  text: string;
+  className?: string;
+  onClick?: () => void;
+}
+
+export default function Button({ text, className, onClick }: ButtonProps) {
   return (
     <button
       type="button"
