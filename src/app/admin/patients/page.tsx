@@ -5,7 +5,7 @@ function Patients() {
   return (
     <div>
        <MainLayout>
-              <PatientList />
+          {[<PatientList />]};
        </MainLayout>
     </div>
   )

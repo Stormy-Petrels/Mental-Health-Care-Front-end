@@ -125,49 +125,13 @@ function Layout(props) {
             pathname.startsWith("/more") ? "text-sky-600 bg-slate-100" : "text-stale-700"
           }
         >
-          <ListItemButton>
-            <ListItemIcon
-              className={
-                pathname.startsWith("/more") ? "text-sky-600 bg-slate-100" : "text-stale-700"
-              }
-            >
-              <AddIcon />
-            </ListItemIcon>
-            <ListItemText primary="More" />
-            {isCollapse ? <ExpandLessIcon /> : <ExpandMoreIcon />}
-          </ListItemButton>
+         
         </ListItem>
       </List>
 
       <Divider />
 
-      <Collapse in={isCollapse} timeout="auto" unmountOnExit>
-        <List className="ml-4">
-          {["Contact", "Docs"].map((text, index) => (
-            <ListItem
-              key={text}
-              disablePadding
-              className={
-                pathname.startsWith("/more") ? "text-sky-600 bg-slate-100" : "text-stale-700"
-              }
-            >
-              <ListItemButton>
-                <ListItemIcon
-                  className={
-                    pathname.startsWith("/more")
-                      ? "text-sky-600 bg-slate-100"
-                      : "text-stale-700"
-                  }
-                >
-                  {index === 0 && <MailIcon />}
-                  {index === 1 && <ArticleIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
-      </Collapse>
+      
     </div>
   );
 

@@ -1,15 +1,19 @@
 import React from "react";
-
-export default function Input({ label, type, placeholder }) {
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+  label: string;
+  name: string;
+}
+const Input: React.FC<InputProps> = ({ label, name, placeholder, ...props }) => {
   return (
     <div>
-      <label htmlFor={type} className="text-sm">
+      <label htmlFor={name} className="text-sm">
         {label}
       </label>
 
       <div className="relative">
         <input
-          type={type}
+          name={name}
+          type={name}
           className="w-full rounded-lg border-none p-4 pe-12 text-sm shadow-sm"
           placeholder={placeholder}
         />
@@ -17,6 +21,9 @@ export default function Input({ label, type, placeholder }) {
     </div>
   );
 }
+
+export default Input;
+
 
 
 

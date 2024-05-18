@@ -5,10 +5,11 @@ function Doctors() {
   return (
     <div>
        <MainLayout>
-              <DoctorList />
+              {[<DoctorList />]}
        </MainLayout>
     </div>
   )
 }
 
 export default Doctors;
+
